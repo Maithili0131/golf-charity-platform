@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Golf Charity</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Golf Charity Dashboard</h1>
+    <nav>
+      <a href="user-dashboard.html">Home</a>
+      <a href="charity.html">Charities</a>
+      <button id="logoutBtn">Logout</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="subscription">
+      <h2>Subscription Status: <span id="subStatus">Loading...</span></h2>
+    </section>
+
+    <section class="scores">
+      <h2>Enter Last 5 Golf Scores</h2>
+      <form id="scoreForm">
+        <input type="number" id="newScore" min="1" max="45" placeholder="Enter score" required>
+        <button type="submit">Add Score</button>
+      </form>
+      <ul id="scoreList"></ul>
+    </section>
+
+    <section class="charity">
+      <h2>Selected Charity: <span id="selectedCharity">Loading...</span></h2>
+    </section>
+
+    <section class="draw">
+      <h2>Draw Participation</h2>
+      <p id="drawStatus">Loading...</p>
+      <button id="participateBtn">Participate in Draw</button>
+    </section>
+  </main>
+
+  <script src="js/dashboard-script.js"></script>
+</body>
+</html>
